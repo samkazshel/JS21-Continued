@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+          </ol>
+        </nav>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample"
+            aria-expanded="false"
+            aria-controls="collapseWidthExample"
+          >
+            Toggle width collapse
+          </button>
+        </p>
+        <div style="min-height: 120px">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px">
+              please input your order
+            </div>
+          </div>
+        </div>
+        <label for="Name">Name: </label>
+        <input type="text" id="Name" name="name" /><br />
+        <label for="Address">Address: </label>
+        <textarea id="Address" name="address" rows="3" col="40"> </textarea>
+        <label for="tel">Telephone: </label>
+        <input type="number" id="tel" name="tel" /> <br />
+        <label for="orderNumber">Order Number: </label>
+        <input type="ordNum" id="orderNumber" name="ordNum" /> <br />
+        <label for="coffeeType">Coffee: </label>
+        <select>
+          <option value="Mocha">Mocha</option>
+          <option value="Flat White">Flat White</option>
+          <option value="Pumpkin Latte">Pumpkin Latte</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>

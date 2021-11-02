@@ -1,0 +1,63 @@
+/* Generally you'll have a CSS style sheet per page 
+and you'll have a general style sheet for the entire page*/
+
+/* Selector {
+    Key Value Pairs
+} */
+
+/* Embedded StyleSheet - created in the style tag of the html document,
+    overwriting all external style sheets
+    Inline Stylesheet - Last resort useful for overwriting things
+
+    */
+
+/* class and ID selectors
+    class should be assigned to multiple elements
+    id should be assigned to ONLY ONE element
+*/
+.firstHeader {
+  color: cornsilk;
+}
+
+.secondHeader {
+  color: rgb(240, 233, 207);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#headerID {
+  font-style: oblique;
+  font-family: cursive;
+  color: yellow;
+}
+
+a:hover {
+  color: chocolate;
+}
+
+a:hover#headerID {
+  color: chartreuse;
+}
+
+.ro-cw-90 {
+  transform: rotate(90deg);
+}
+
+.ro-ccw-90 {
+  transform: rotate(90deg);
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
