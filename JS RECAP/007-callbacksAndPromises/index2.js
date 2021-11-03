@@ -12,7 +12,7 @@ let promise = new Promise((resolve, reject) => {
 promise.then((message) => {
     console.log(message);
 }).catch((message) => {
-    console.log(message);
+    console.log(message); 
 }).then(() => {
     console.log("This function is looking for whether the number is even or odd")
 })
